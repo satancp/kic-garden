@@ -22,8 +22,47 @@
     font-size: 40px;
     font-weight: bold;
     font-family: 'Comic Sans MS', cursive, sans-serif;
+    cursor: pointer;
 }
 .kic-garden-web-content-container {
     margin-top: 100px;
     width: 100%;
+}
+.kic-garden-web-header-right-actions {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+}
+.kic-garden-web-header-left-actions {
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 40px;
+}
+.kic-garden-web-header-action-single {
+    font-size: 16px;
+    letter-spacing: 0.06px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: 'Graphik Web', sans-serif;
+    cursor: pointer;
+    color: #171717;
+}
+.kic-garden-web-header-action-single:hover {
+    color: #45af2a;
+}
+.kic-garden-web-header-action-icon {
+    width: 25px;
+    height: 25px;
+    fill: #171717;
+}
+.kic-garden-web-header-action-icon:hover {
+    fill: #45af2a;
 }

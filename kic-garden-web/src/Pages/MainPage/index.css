@@ -1,7 +1,6 @@
 .kic-garden-mainpage-hot-news-container {
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: unset;
+    overflow: unset;
 }
 .kic-garden-mainpage-hot-news-single-container {
     display: flex !important;
@@ -20,8 +19,8 @@
     background-color: #ffffff;
     position: absolute;
     z-index: 2;
-    bottom: 0;
-    right: 240px;
+    bottom: calc(100% - 215 / 2) px;
+    right: 0;
     padding: 30px;
     display: flex;
     justify-content: space-between;

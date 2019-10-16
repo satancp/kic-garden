@@ -4,11 +4,11 @@ import Container from './Container';
 import MainPage from './Pages/MainPage';
 import cookie from 'react-cookies';
 
-export default class Routes extends React.Component {
+class Routes extends React.Component {
     constructor() {
         super();
         this.state = {
-            hasLogin: false,
+            hasLogin: false
         };
     }
 
@@ -21,15 +21,16 @@ export default class Routes extends React.Component {
     }
 
     render() {
-        const { history } = this.props;
         return (
             <BrowserRouter>
                 <Switch>
                     <Container>
-                        <Route path="/" component={() => <MainPage history={history} />} />
+                        <Route path="/" component={() => <MainPage />} />
                     </Container>
                 </Switch>
             </BrowserRouter>
         );
     }
 }
+
+export default Routes;

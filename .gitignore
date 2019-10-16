@@ -1,1 +1,3 @@
 kic-garden-web/node_modules/
+yarn.lock
+/kic-garden-web/yarn.lock
