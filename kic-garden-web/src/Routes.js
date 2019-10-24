@@ -8,8 +8,10 @@ class Routes extends React.Component {
     constructor() {
         super();
         this.state = {
-            hasLogin: false
+            hasLogin: false,
+            currentLan: 'en',
         };
+        this.setLan = this.setLan.bind(this);
     }
 
     componentDidMount() {
@@ -18,14 +20,25 @@ class Routes extends React.Component {
         } else {
             this.setState({ hasLogin: false });
         }
+        if (cookie.load('language')) {
+            this.setState({ currentLan: cookie.load('language') });
+        } else {
+            this.setState({ currentLan: 'en' });
+        }
+    }
+
+    setLan(lan) {
+        cookie.save('language', lan, { path: '/' });
+        this.setState({ currentLan: lan });
     }
 
     render() {
+        const { currentLan, hasLogin } = this.state;
         return (
             <BrowserRouter>
                 <Switch>
-                    <Container>
-                        <Route path="/" component={() => <MainPage />} />
+                    <Container currentLan={currentLan} hasLogin={hasLogin} setLan={this.setLan}>
+                        <Route path="/" component={() => <MainPage currentLan={currentLan} hasLogin={hasLogin} />} />
                     </Container>
                 </Switch>
             </BrowserRouter>

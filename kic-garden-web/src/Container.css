@@ -66,3 +66,18 @@
 .kic-garden-web-header-action-icon:hover {
     fill: #45af2a;
 }
+.kic-garden-web-footer-container {
+    background-color: #2d292a;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.kic-garden-web-footer-copyright {
+    color: #aaaaaa;
+    font-family: 'Graphik Web', sans-serif;
+    font-size: 14px;
+}

@@ -62,3 +62,34 @@
     align-items: flex-start;
     flex-direction: column;
 }
+.kic-garden-mainpage-shortcut-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.kic-garden-mainpage-shortcut-anim-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.kic-garden-mainpage-shortcut-single-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+.kic-garden-mainpage-shortcut-single-real-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    cursor: pointer;
+}
+.kic-garden-mainpage-shortcut-single-image {
+    width: 100%;
+}
+.kic-garden-mainpage-shortcut-single-text {
+    margin-top: 1rem;
+}
